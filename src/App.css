@@ -1,0 +1,162 @@
+.exercise-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  padding: 24px;
+  background: #f7f7f7;
+}
+
+.exercise-box {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  min-height: 170px;
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  background: #ffffff;
+  text-align: left;
+}
+
+.exercise-label {
+  color: #f28c22;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.exercise-box h2 {
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.exercise-box p {
+  color: #222222;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.count-display {
+  color: #f28c22;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.counter-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.counter-actions button {
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid #f28c22;
+  border-radius: 5px;
+  color: #ffffff;
+  background: #f28c22;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.counter-actions button:first-child {
+  color: #f28c22;
+  background: #ffffff;
+}
+
+.simple-card {
+  min-height: 100vh;
+  color: #111111;
+  background: #ffffff;
+  text-align: center;
+}
+
+.hero-section {
+  padding-top: 8px;
+  background: #f28c22;
+}
+
+.brand-image {
+  width: min(430px, calc(100% - 32px));
+  height: auto;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 7px 16px 9px;
+}
+
+.site-nav a {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  text-decoration: underline;
+}
+
+.content-section {
+  display: grid;
+  gap: 18px;
+  padding: 38px 20px 36px;
+}
+
+.content-section section {
+  display: grid;
+  gap: 20px;
+}
+
+.content-section h2 {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.content-section p {
+  color: #202020;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.site-footer {
+  padding: 25px 16px;
+  color: #ffffff;
+  background: #f6d083;
+}
+
+.site-footer p {
+  font-size: 15px;
+}
+
+@media (max-width: 560px) {
+  .exercise-list {
+    grid-template-columns: 1fr;
+    padding: 14px;
+  }
+
+  .hero-section {
+    padding-top: 12px;
+  }
+
+  .site-nav {
+    padding-top: 10px;
+  }
+
+  .content-section {
+    padding-block: 30px;
+  }
+}
+
+@media (min-width: 561px) and (max-width: 980px) {
+  .exercise-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
